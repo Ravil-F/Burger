@@ -65,10 +65,15 @@ p {
    display: inline-block;
    text-decoration: none;
    box-shadow: 0px 0px #271d08;
-   transition: box-shadow 0.5s;
+   transition: box-shadow 0.5s, position 0.5s, top 1s, left 1s;
 }
 .link:hover {
    box-shadow: 5px 5px #5e4510;
+}.link:active {
+   position: relative;
+   top: 5px;
+   left: 5px;
+   box-shadow: 0px 0px #5e4510;
 }
 
 .header__visual {
@@ -86,6 +91,46 @@ p {
    width: 829px;
    position: absolute;
    right: -169px;
+}
+
+@media (max-width: 1200px) {
+   .header__paragraph {
+      padding-top: 130px;
+      padding-bottom: 130px;
+      width: 100%;
+      text-align: center;
+   }
+   .header__title {
+      font-size: 100px;
+      line-height: 120px;
+      margin-bottom: 35px;
+   }
+   .header__subtitle {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 10px;
+   }
+   .header__text {
+      font-size: 16px;
+      margin-bottom: 40px;
+   }
+   .link{
+      font-size: 12px;
+      line-height: 18px;
+      border-radius: 5px;
+      padding: 20px 45px;
+   }
+   .header__visual {
+      display: none;
+   }
+   .header__bg {
+      width: 400px;
+   }
+   .header__img {
+      width: 750px;
+      position: absolute;
+      right: -169px;
+   }
 }
 
 .app__main {
@@ -146,13 +191,37 @@ h3 {
    line-height: 56px;
    color: #FFFFFF;
 }
+
+@media (max-width: 1200px) {
+   .app__main {
+      margin: 140px 0px;
+   }
+   .main__right {
+      margin-top: 20px;
+   }
+}
+
 .app__footer {
    background-color: #1E2F40;
 }
 .footer__item {
    padding-top: 117px;
    padding-bottom: 106px;
+   position: relative;
 }
+.footer__input {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+}
+.footer__input:checked ~ .footer__label{
+   text-decoration: underline;
+   color: #fccece;
+} 
+.footer__input:checked ~ .footer__menu{
+   display: block;
+} 
 .footer__title {
    font-family: 'Nunito Sans';
    font-weight: 800;
@@ -163,7 +232,9 @@ h3 {
    margin-bottom: 12px;
 }
 .footer__menu {
+   display: none;
    list-style-type: none;
+   text-align: center;
 }
 .footer__items {
    margin-bottom: 9px;
@@ -190,4 +261,17 @@ h3 {
    line-height: 38px;
    text-transform: uppercase;
    color: #FBB731;
+}
+
+@media (max-width: 1200px) {
+   .conteiner{
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: flex-start;
+   }
+   .footer__item {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      position: relative;
+   }
 }
