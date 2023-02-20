@@ -2,7 +2,9 @@
    padding: 0px;
    margin: 0px;
 }
-
+hmtl {
+   font-size: 16px;
+}
 
 p {
    font-family: 'Open Sans', sans-serif;
@@ -18,50 +20,51 @@ p {
    max-width: 1180px;;
    margin: 0 auto;
    width: 100%;
-   padding: 0px 15px;
+   padding: 0px 1.5em;
    display: flex;
 	justify-content: space-between;
 }
 .header__paragraph {
    font-family: 'Nunito Sans', sans-serif;
    flex: 0 0 50%;
-   padding-top: 169px;
-   padding-bottom: 169px;
+   padding-top: 10.5em;
+   padding-bottom: 10.5em;
 }
 .header__title {
    color: #FAF9F9;
    font-weight: 800;
-   font-size: 120px;
-   line-height: 140px;
+   font-size: 7.5rem;
+   line-height: 8.75rem;
    text-transform: uppercase;
-   margin-bottom: 40px;
+   margin-bottom: 2.5em;
 }
 .header__subtitle {
    font-weight: 700;
-   font-size: 30px;
-   line-height: 38px;
+   font-size: 1.875rem;
+   line-height: 2.375rem;
    text-transform: uppercase;
    color: #FBB731;
    display: block;
-   margin-bottom: 10px;
+   margin-bottom: 0.625em;
 }
 .header__text {
    font-weight: 400;
-   font-size: 19px;
+   font-size: 1.1875rem;
    line-height: 140%;
    color: #DEDEDE;
-   margin-bottom: 40px;
+   margin-bottom: 2.5em;
+   padding: 0em 0.2em;
 }
 .link{
    font-family: 'Nunito Sans';
    font-weight: 700;
-   font-size: 14px;
-   line-height: 18px;
+   font-size: 0.875rem;
+   line-height: 1.125rem;
    text-transform: uppercase;
    color: #1E2F40;
    background: #FBB731;
-   border-radius: 5px;
-   padding: 20px 45px;
+   border-radius: 0.3rem;
+   padding: 1.25em 2.8em;
    display: inline-block;
    text-decoration: none;
    box-shadow: 0px 0px #271d08;
@@ -94,31 +97,25 @@ p {
 }
 
 @media (max-width: 1200px) {
+   .conteiner {
+      padding: 0px 0px;
+   }
    .header__paragraph {
-      padding-top: 130px;
-      padding-bottom: 130px;
+      padding-top: 7em;
+      padding-bottom: 7em;
       width: 100%;
       text-align: center;
    }
    .header__title {
-      font-size: 100px;
-      line-height: 120px;
-      margin-bottom: 35px;
+      margin-bottom: 1em;
    }
    .header__subtitle {
-      font-size: 25px;
-      line-height: 35px;
-      margin-bottom: 10px;
+      margin-bottom: 0.6em;
    }
    .header__text {
-      font-size: 16px;
-      margin-bottom: 40px;
-   }
-   .link{
-      font-size: 12px;
-      line-height: 18px;
-      border-radius: 5px;
-      padding: 20px 45px;
+      padding: 0em 0.2em;
+      margin-bottom: 2.5em;
+      text-align: center;
    }
    .header__visual {
       display: none;
@@ -132,9 +129,36 @@ p {
       right: -169px;
    }
 }
+@media (max-width: 768px) {
+   html {
+      font-size: 15px;
+   }
+   .header__paragraph {
+      padding-top: 4em;
+      padding-bottom: 4em;
+   }
+   .header__title {
+      margin-bottom: 0.7em;
+   }
+   .header__text {
+      padding: 0em 0em;
+      margin-bottom: 2.5em;
+      text-align: center;
+   }
+}
+@media (max-width: 540px) {
+   html {
+      font-size: 10px;
+   }
+}
+@media (max-width: 412px) {
+   html {
+      font-size: 7px;
+   }
+}
 
 .app__main {
-   margin: 186px 0px;
+   margin: 11.6em 0px;
    flex-grow: 1;
    flex-basis: 100%;
    flex-shrink: 0;
@@ -151,7 +175,7 @@ h3 {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   padding: 120px 50px 120px 50px;
+   padding: 7.5em 3.1em 7.5em 3.1em;
 }
 .main__left {
    background-image: url(../img/main_left.jpg);
@@ -159,27 +183,27 @@ h3 {
 .main__left-sale {
    background-color:  #F37335;
    border-radius: 14px;
-   padding: 5px 19px;
+   padding: 0.3em 1.1em;
    display: inline-block;
 }
 .main__left-Snumber{
-   font-style: 60px;
-   line-height: 76px;
+   font-size: 3.75em;
+   line-height: 4.75em;
    text-transform: uppercase;
    margin: 3px 0px 8px 0px;
 }
 .main__text {
    color: #FAF9F9;
    font-weight: 400;
-   font-size: 15px;
-   line-height: 24px;
+   font-size: 0.9rem;
+   line-height: 1.5rem;
 }
 .main__left .main__text {
    max-width: 393px;
 }
 .main__right .main__text {
    max-width: 300px;
-   margin: 10px 0px 20px 0px;
+   margin: 0.6em 0px 1.25em 0px;
 }
 .main__right {
    background-image: url(../img/main__right.jpg);
@@ -187,17 +211,26 @@ h3 {
 .main__right-title {
    font-family: 'Nunito Sans';
    font-weight: 700;
-   font-size: 44px;
+   font-size: 2.75rem;
    line-height: 56px;
    color: #FFFFFF;
 }
 
 @media (max-width: 1200px) {
    .app__main {
-      margin: 140px 0px;
+      margin: 7em 0px;
    }
    .main__right {
-      margin-top: 20px;
+      margin-top: 1.25em;
+      width: 100%;
+   }
+   .main__left {
+      width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .app__main {
+      margin: 4em 0px;
    }
 }
 
@@ -205,8 +238,8 @@ h3 {
    background-color: #1E2F40;
 }
 .footer__item {
-   padding-top: 117px;
-   padding-bottom: 106px;
+   padding-top: 7.3em;
+   padding-bottom: 6.625em;
    position: relative;
 }
 .footer__input {
@@ -225,11 +258,11 @@ h3 {
 .footer__title {
    font-family: 'Nunito Sans';
    font-weight: 800;
-   font-size: 20px;
-   line-height: 38px;
+   font-size: 1.2rem;
+   line-height: 2.375rem;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-bottom: 12px;
+   margin-bottom: 0.75em;
 }
 .footer__menu {
    display: none;
@@ -237,7 +270,7 @@ h3 {
    text-align: center;
 }
 .footer__items {
-   margin-bottom: 9px;
+   margin-bottom: 0.56em;
    color: #DEDEDE;
 }
 .footer__link {
@@ -252,13 +285,13 @@ h3 {
 .footer__inf {
    font-weight: 700;
    color: #FAF9F9;
-   margin-top: 2px;
+   margin-top: 0.125em;
 }
 .footer__tel {
    font-family: 'Nunito Sans';
    font-weight: 800;
-   font-size: 20px;
-   line-height: 38px;
+   font-size: 1.25rem;
+   line-height: 2.375rem;
    text-transform: uppercase;
    color: #FBB731;
 }
@@ -270,8 +303,15 @@ h3 {
       justify-content: flex-start;
    }
    .footer__item {
-      padding-top: 30px;
-      padding-bottom: 20px;
+      padding-top: 1.8em;
+      padding-bottom: 1.25em;
+      position: relative;
+   }
+}
+@media (max-width: 768px) {
+   .footer__item {
+      padding-top: 1em;
+      padding-bottom: 1.1em;
       position: relative;
    }
 }
