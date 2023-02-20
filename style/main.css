@@ -71,11 +71,11 @@ p {
    transition: box-shadow 0.5s, position 0.5s, top 1s, left 1s;
 }
 .link:hover {
-   box-shadow: 5px 5px #5e4510;
+   box-shadow: 0.31em 0.31em #5e4510;
 }.link:active {
    position: relative;
-   top: 5px;
-   left: 5px;
+   top: 0.31em;
+   left: 0.31em;
    box-shadow: 0px 0px #5e4510;
 }
 
@@ -130,9 +130,6 @@ p {
    }
 }
 @media (max-width: 768px) {
-   html {
-      font-size: 15px;
-   }
    .header__paragraph {
       padding-top: 4em;
       padding-bottom: 4em;
@@ -141,20 +138,28 @@ p {
       margin-bottom: 0.7em;
    }
    .header__text {
-      padding: 0em 0em;
+      padding: 0em 0.5em;
       margin-bottom: 2.5em;
       text-align: center;
    }
 }
 @media (max-width: 540px) {
    html {
-      font-size: 10px;
+      font-size: 14px;
+   }
+   .header__title {
+      font-size: 4.5rem;
+      line-height: 5.75rem;
+   }
+   .header__text {
+      letter-spacing: 0.1rem;
    }
 }
 @media (max-width: 412px) {
    html {
-      font-size: 7px;
+      font-size: 14px;
    }
+
 }
 
 .app__main {
@@ -190,7 +195,7 @@ h3 {
    font-size: 3.75em;
    line-height: 4.75em;
    text-transform: uppercase;
-   margin: 3px 0px 8px 0px;
+   margin: 0.1875em 0px 0.5em 0px;
 }
 .main__text {
    color: #FAF9F9;
